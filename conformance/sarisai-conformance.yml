@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.saris.ai
+note: >-
+  SarisAI is a private B2B AI-workflow platform for banks and credit unions with
+  no public developer API, OpenAPI, or self-service surface. Conformance here is
+  limited to the compliance / certification posture the company publishes on its
+  marketing site; there is no spec to derive cross-cutting API standards from.
+standards:
+  - id: soc2
+    conforms: true
+    evidence: "Homepage trust badges state 'SOC 2 ... certified'"
+  - id: gdpr
+    conforms: true
+    evidence: "Homepage trust badges state 'GDPR ... certified'"
+  - id: glba
+    conforms: true
+    evidence: "Homepage trust badges state 'GLBA ... certified' (Gramm-Leach-Bliley Act)"
+  - id: cuso
+    conforms: true
+    evidence: "Homepage states 'CUSO certified' (Credit Union Service Organization)"
+certifications:
+  - SOC 2
+  - GDPR
+  - GLBA
+  - CUSO

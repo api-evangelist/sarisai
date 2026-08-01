@@ -1,20 +1,51 @@
 aid: sarisai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sarisai.png
 name: SarisAI
-description: 'SarisAI is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  SarisAI (Saris) builds agentic AI workflow automation for banks and credit
+  unions, automating multi-step back-office operations across lending,
+  compliance, and operations while keeping human oversight and audit trails.
+  Its platform runs six specialized AI agents (Document, System, Inbox, Audit &
+  Monitoring, External, and Income & Financial Analysis) that handle document
+  intake, income verification, data validation, borrower communication, and
+  post-close regulatory checks across mortgage, consumer, and commercial
+  lending. Saris integrates directly with core banking, loan origination, and
+  document systems (Fiserv, Encompass, OnBase/Hyland, Meridian) and LLM
+  providers (OpenAI, Anthropic, Gemini). The company is a Homebrew-backed
+  fintech and is SOC 2, GDPR, GLBA, and CUSO certified. It is a private B2B
+  platform with no public developer API, OpenAPI, or self-service surface; this
+  profile captures its identity and security posture for the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/sarisai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - homebrew
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Banking
+- Credit Unions
+- AI Agents
+- Workflow Automation
+- Lending
+- Compliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +55,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.saris.ai
+- type: Blog
+  url: https://www.saris.ai/blog
+- type: About
+  url: https://www.saris.ai/about
+- type: SignUp
+  url: https://www.saris.ai/book-a-demo
+- type: LinkedIn
+  url: https://www.linkedin.com/company/102858905
+- type: Compliance
+  url: https://www.saris.ai
+- type: Conformance
+  url: conformance/sarisai-conformance.yml
+- type: DomainSecurity
+  url: security/sarisai-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
