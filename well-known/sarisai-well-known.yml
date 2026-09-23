@@ -2,11 +2,11 @@ generated: '2026-07-21'
 method: searched
 source: live probes of https://www.saris.ai/.well-known/*
 host: https://www.saris.ai
-note: >-
-  No .well-known discovery documents, ai-plugin.json, or llms.txt are published.
-  SarisAI runs a marketing site (Webflow) with no public API surface. Absence is
-  a valid, expected result and is recorded here.
-documents:
+note: No .well-known discovery documents, ai-plugin.json, or llms.txt are published. SarisAI runs a marketing
+  site (Webflow) with no public API surface. Absence is a valid, expected result and is recorded here.
+hosts:
+- host: https://www.saris.ai
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -17,5 +17,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
-  - path: /llms.txt
-    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
