@@ -7,14 +7,17 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.saris.ai
   final_host: www.saris.ai
-  ownership: inherited
+  ownership: own
   owner: sarisai
   shares_host_with: null
-  inherited_from: saris.ai
+  inherited_from: null
+  alias_of: saris.ai
   verdict: scored
-  score: null
+  score: 11
+  band: 5
+  band_label: prominent
   host_score: 11
-  density: null
+  density: 30.14
   words: 365
   tiers:
     agentic: 1
